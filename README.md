@@ -4,9 +4,9 @@
 
 - Time series forecasting is a crucial tool in predictive analytics, especially when analyzing trends over time, such as sales, demand, or usage patterns. This project explores two classical statistical methods for time series forecasting:
 
-♦️ ARIMA (AutoRegressive Integrated Moving Average)
+💠 ARIMA (AutoRegressive Integrated Moving Average)
 
-♦️ SARIMA (Seasonal ARIMA)
+💠 SARIMA (Seasonal ARIMA)
 
 - These models are particularly useful when working with univariate time series data that exhibits autocorrelation, trends, or seasonality. We apply both methods to a real-world dataset of monthly champagne sales to model and forecast future values.
 

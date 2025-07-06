@@ -2,13 +2,13 @@
 
 # 🔍 Introduction
 
-Time series forecasting is a crucial tool in predictive analytics, especially when analyzing trends over time, such as sales, demand, or usage patterns. This project explores two classical statistical methods for time series forecasting:
+- Time series forecasting is a crucial tool in predictive analytics, especially when analyzing trends over time, such as sales, demand, or usage patterns. This project explores two classical statistical methods for time series forecasting:
 
 ARIMA (AutoRegressive Integrated Moving Average)
 
 SARIMA (Seasonal ARIMA)
 
-These models are particularly useful when working with univariate time series data that exhibits autocorrelation, trends, or seasonality. We apply both methods to a real-world dataset of monthly champagne sales to model and forecast future values.
+- These models are particularly useful when working with univariate time series data that exhibits autocorrelation, trends, or seasonality. We apply both methods to a real-world dataset of monthly champagne sales to model and forecast future values.
 
 # 🧠 Key Concepts:
 ARIMA: Combines autoregression (AR), differencing (I), and moving average (MA) to model time series data.
@@ -26,15 +26,15 @@ SARIMA: Extends ARIMA by incorporating seasonal components (i.e., repeated patte
 
 ## 2. Initial Visualization
 
-Plotted the sales data over time.
+- Plotted the sales data over time.
 
-Observed clear seasonality and upward trends, indicating the need for advanced modeling.
+- Observed clear seasonality and upward trends, indicating the need for advanced modeling.
 
 ## 3. Stationarity Check
 
-Used the ADF (Augmented Dickey-Fuller) test to check if the series is stationary.
+- Used the ADF (Augmented Dickey-Fuller) test to check if the series is stationary.
 
-Applied differencing and seasonal differencing to make the series stationary.
+- Applied differencing and seasonal differencing to make the series stationary.
 
 ## 4. ACF & PACF Plots
 
@@ -42,32 +42,32 @@ Generated AutoCorrelation Function (ACF) and Partial AutoCorrelation Function (P
 
 ## 5. Model Building – ARIMA
 
-Fit an ARIMA(1,1,1) model on the differenced data.
+- Fit an ARIMA(1,1,1) model on the differenced data.
 
-Plotted predictions against actuals.
+- Plotted predictions against actuals.
 
-Observed that ARIMA was not capturing seasonality well.
+- Observed that ARIMA was not capturing seasonality well.
 
 ## 6. Model Building – SARIMA
 
-Fit a SARIMA(1,1,1)(1,1,1,12) model.
+- Fit a SARIMA(1,1,1)(1,1,1,12) model.
 
-Generated forecasts and visualized them.
+- Generated forecasts and visualized them.
 
-This model handled seasonal variations much more accurately.
+- This model handled seasonal variations much more accurately.
 
 # 📌 Observations & Conclusion
 
-As we can see, the ARIMA model was unable to model the seasonal patterns, which led to poor forecasting accuracy.
+- As we can see, the ARIMA model was unable to model the seasonal patterns, which led to poor forecasting accuracy.
 
-The SARIMA model, however, significantly improved the forecast, capturing seasonal dips and spikes effectively.
+- The SARIMA model, however, significantly improved the forecast, capturing seasonal dips and spikes effectively.
 
-Thus, SARIMA is better suited for this type of seasonal time series data.
+- Thus, SARIMA is better suited for this type of seasonal time series data.
 
 # 💻 Technologies Used
 
-Python
+- Python
 
-Jupyter Notebook
+- Jupyter Notebook
 
-pandas, matplotlib, statsmodels
+- pandas, matplotlib, statsmodels
